@@ -2,6 +2,7 @@ FROM python:3.7-slim-stretch
 
 RUN apt-get update \
     && apt-get install -y \
+        # global libs
         curl \
         apt-transport-https \
         make \
@@ -9,7 +10,15 @@ RUN apt-get update \
         unixodbc \
         unixodbc-dev \
         gnupg2 \
-        tzdata
+        tzdata \
+        xvfb \
+        # install fonts
+        xfonts-100dpi \
+        xfonts-75dpi \
+        xfonts-scalable \
+        xfonts-cyrillic \
+        # installing lib to work with pdfs in python
+        wkhtmltopdf
 
 RUN ln -fs /usr/share/zoneinfo/America/Fortaleza /etc/localtime && dpkg-reconfigure -f noninteractive tzdata
 RUN pip install --upgrade pip

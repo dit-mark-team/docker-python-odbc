@@ -1,6 +1,6 @@
 FROM fedora:30
 
-RUN dnf -y update && groupinstall "Development Tools" "C Development Tools and Libraries"
+RUN dnf -y update && dnf group install "Development Tools" "C Development Tools and Libraries"
 
 RUN dnf -y install \
     redhat-rpm-config \

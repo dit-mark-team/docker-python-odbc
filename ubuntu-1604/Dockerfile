@@ -1,9 +1,5 @@
 FROM ubuntu:16.04
 
-# Development: where the actual coding takes place
-# Staging: where the application is reviewed and tested
-# Production: where the final version of the application is hosted
-
 # Define Your Envs Config
 ENV PYENV_ROOT=$HOME/.pyenv
 ENV PATH=$PYENV_ROOT/shims:$PYENV_ROOT/bin:$PATH

@@ -1,6 +1,6 @@
 FROM python:3.7-slim-stretch
 
-RUN apt-get update apt-get install -y \
+RUN apt-get update && apt-get install -y \
     curl \
     apt-transport-https \
     make \
@@ -17,6 +17,7 @@ RUN apt-get update apt-get install -y \
     wkhtmltopdf
 
 RUN ln -fs /usr/share/zoneinfo/America/Fortaleza /etc/localtime && dpkg-reconfigure -f noninteractive tzdata
+RUN LANG=pt_BR.UTF-8
 RUN pip install --upgrade pip
 
 RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -

@@ -1,6 +1,7 @@
 FROM fedora:30
 
-RUN dnf -y update && dnf group install "Development Tools" "C Development Tools and Libraries"
+RUN dnf -y update \
+ && dnf -y group install "Development Tools" "C Development Tools and Libraries"
 
 RUN dnf -y install \
     redhat-rpm-config \
@@ -16,13 +17,7 @@ RUN dnf -y install \
     gdk-pixbuf2 \
     unixODBC \
     unixODBC-devel \
-    langpacks-pt_BR \
-    xvfb \
-    xfonts-100dpi \
-    xfonts-75dpi \
-    xfonts-scalable \
-    xfonts-cyrillic \
-    wkhtmltopdf
+    langpacks-pt_BR
 
 RUN curl https://packages.microsoft.com/config/rhel/7/prod.repo > /etc/yum.repos.d/mssql-release.repo
 RUN dnf -y update

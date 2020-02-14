@@ -1,6 +1,6 @@
 ## docker-python
 
-*"These are simple Python images that contain dependencies used in @ditceuma projects and maintained by [Mark Team](https://github.com/ditceuma-mark-team)."*
+*"These are simple Python images that contain dependencies used in [@ditceuma](https://github.com/ditceuma) projects and maintained by [Mark Team](https://github.com/ditceuma-mark-team)."*
 
 ### Bibliotecas
 

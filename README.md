@@ -29,6 +29,8 @@
 - msodbcsql17
 - mssql-tools
 
-Para mais informações verifique o [Dockerhub da Imagem](https://hub.docker.com/r/ceumanti/docker-python-odbc/).
+### Outras informações
 
-Para a ver um exemplo de uso da imagem em um projeto, acesse: [devsceuma/flask-skeleton-api](https://github.com/devsceuma/flask-skeleton-api).
+Para mais informações verifique o [Dockerhub da Imagem](https://hub.docker.com/r/markteam/docker-python).
+
+Para a ver um exemplo de uso da imagem em um projeto, acesse: [flask-skeleton-api](https://github.com/ditceuma-mark-team/flask-skeleton-api).

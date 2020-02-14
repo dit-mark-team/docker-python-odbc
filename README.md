@@ -1,10 +1,33 @@
-# docker-python-odbc
+## docker-python
 
-*"A simple Docker Image set with Python 3.6.5 using Pyenv and with ODBC."*
+*"These are simple Python images that contain dependencies used in @ditceuma projects and maintained by [Mark Team](https://github.com/ditceuma-mark-team)."*
 
-Os arquivos Dockerfiles neste repositório, têm como objetivo criar imagens personalizadas utilizando Python e o Driver ODBC para conexão com **SQL Server**.
+### Bibliotecas
 
-Verifique as *releases* para saber qual versão se encaixa nas suas necessidades.
+**Bibliotecas Globais**
+
+- curl
+- apt-transport-https
+- make
+- build-essential
+- unixodbc
+- unixodbc-dev
+- gnupg2
+- tzdata
+
+**Para manipulação com arquivos em PDF e suas dependências**
+
+- wkhtmltopdf
+    - xvfb
+    - xfonts-100dpi
+    - xfonts-75dpi
+    - xfonts-scalable
+    - xfonts-cyrillic
+
+**Driver ODBC para conexão com SQL Server**
+
+- msodbcsql17
+- mssql-tools
 
 Para mais informações verifique o [Dockerhub da Imagem](https://hub.docker.com/r/ceumanti/docker-python-odbc/).
 

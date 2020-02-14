@@ -29,7 +29,12 @@
 - msodbcsql17
 - mssql-tools
 
-**OBS: A imagem com Python do [Ubuntu](ubuntu-1604/Dockerfile), utiliza em sua estrutura o pyenv. O Pyenv possui muitas dependências que compilam em tempo de construção, portanto o seu download ou `build`, pode demorar bastante.**
+--------------------------------------------------
+
+`DEPRECATED`: **a imagem baseada no ubuntu 16.04 não será mais mantida.**
+~~**OBS: A imagem com Python do [Ubuntu](ubuntu-1604/Dockerfile), utiliza em sua estrutura o pyenv. O Pyenv possui muitas dependências que compilam em tempo de construção, portanto o seu download ou `build`, pode demorar bastante.**~~
+
+--------------------------------------------------
 
 ### Outras informações
 

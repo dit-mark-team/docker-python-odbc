@@ -1,5 +1,7 @@
 FROM ubuntu:16.04
 
+# DEPRECATED: this image is no longer being maintained
+
 # Define Your Envs Config
 ENV PYENV_ROOT=$HOME/.pyenv
 ENV PATH=$PYENV_ROOT/shims:$PYENV_ROOT/bin:$PATH
